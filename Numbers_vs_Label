@@ -1,1 +1,13 @@
-
+n=input().split()
+missing={"NA","n/a","None",""}
+num=[]
+st=[]
+for i in n:
+    if i in missing:
+        continue
+    elif i.isdigit():
+        num.append(i)
+    else:
+        st.append(i) 
+print(num)
+print(st)
