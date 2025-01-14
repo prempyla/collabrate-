@@ -1,1 +1,55 @@
 
+•⁠  ⁠{
+    margin: 0;    
+    padding: 0;    
+}
+
+h1, h2 {
+    font-family: Verdana, sans-serif;  
+    color: navy;                    
+}
+
+
+#featured p {
+    background-color: beige;    
+}
+
+
+li {
+    padding: 10px;               
+    border: 1px dashed gray;
+}
+
+div + p{
+    font-style: italic;
+}
+
+.highlight ~ p{
+    color:maroon;
+}
+
+a[target="_blank"] {
+
+    color: darkviolet;           
+    text-decoration: none;
+}
+
+li:first-child {
+    
+    background-color: lightblue;
+}
+li:last-child {
+    color: red;
+}
+
+ul ul>li:nth-child(2){
+    font-size: 16px;
+}
+
+h1::before {
+    content: "⭐ ";                 
+}
+
+footer a::after {
+    content: " 🔗"; 
+}
