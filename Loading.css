@@ -1,1 +1,31 @@
+/* styles.css */
 
+/* Center the loader in the viewport */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    background-color: #f0f0f0; /* Light background for contrast */
+}
+
+/* Loader styles */
+.loader {
+    width: 50px; /* Width of the loader */
+    height: 50px; /* Height of the loader */
+    border: 5px solid #f3f3f3; /* Light border */
+    border-top: 5px solid #3498db; /* Blue top border */
+    border-radius: 50%; /* Make it circular */
+    animation: spin 2s linear infinite; /* Apply spin animation */
+}
+
+/* Keyframes for spin animation */
+@keyframes spin {
+    from {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees */
+    }
+}
