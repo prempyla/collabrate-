@@ -1,1 +1,28 @@
-
+<!-- html code goes here -->
+<form>
+    <h1>Simple Form</h1>
+    <div>
+    <label for="name" name="name">Name:</label>
+    <input id="name" type="text" name="name" placeholder="Enter your name" required>
+    </div>
+    <div>
+        <label for="email" name="email">Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div>
+        <label for="message" name="message">Message:</label>
+        <textarea id="message" type="text" name="message" placeholder="Enter your message" required></textarea>
+    </div>
+    <div>
+        <label for="gender" name="gender">Gender:</label>
+        <select for="gender" name="gender" id="gender" required>
+            <option id="select" name="gender">Select</option>
+            <option id="male" name="gender">Male</option>
+            <option id="female" name="gender">Female</option>
+            <option id="other" name="gender">Other</option>
+        </select>
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
