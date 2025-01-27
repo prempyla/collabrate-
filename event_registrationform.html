@@ -1,1 +1,48 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<div class="form-container">
+        <h1>Music Concert 2024 Registration</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <br><input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <br><input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <br><input type="text" id="phone" placeholder="Enter your phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="ticket-type">Ticket Type:</label>
+                <br><select id="ticket-type" required>
+                    <option value="general">General</option>
+                    <option value="vip">VIP</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Accommodation Preference:</label>
+                <label for="hotel">
+                    <input type="radio" id="hotel" name="accommodation" value="hotel" required> Hotel
+                </label>
+                <label for="guesthouse">
+                    <input type="radio" id="guesthouse" name="accommodation" value="guesthouse" required> Guest House
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="terms">I agree to the terms and conditions</label>
+                    <input type="checkbox" id="terms" required>
+            </div>
+            <div class="form-group">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</html>
