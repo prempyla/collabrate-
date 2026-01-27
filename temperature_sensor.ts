@@ -1,5 +1,4 @@
 class TemperatureSensor {
-  // write your code here
   private temperature: number;
 
   constructor(temperature: number) {
