@@ -1,5 +1,4 @@
 class BankAccount {
-  // write your code here
   private balance: number;
   private transactions: string[] = [];
 
