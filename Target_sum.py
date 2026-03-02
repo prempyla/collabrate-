@@ -1,4 +1,3 @@
-
 def has_pair_with_sum(arr, target):
     left = 0
     right = len(arr) - 1
