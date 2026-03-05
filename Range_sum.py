@@ -1,4 +1,3 @@
-
 lst = list(map(int, input().split()))
 q = int(input())
 
