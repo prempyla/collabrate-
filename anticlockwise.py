@@ -1,4 +1,3 @@
-
 n, m = map(int, input().split())
 mat=[]
 for _ in range(n):
