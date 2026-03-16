@@ -15,6 +15,3 @@ for i in range(n):
     for j in range(m):
         matrix[j][i]=mat[i][j]
 matrix.reverse()
-
-for i in matrix:
-    print(" ".join(map(str, i)))
