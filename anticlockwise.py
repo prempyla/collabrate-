@@ -10,8 +10,3 @@ for i in range(m):
     for j in range(n):
         l.append(0)
     matrix.append(l)
-
-for i in range(n):
-    for j in range(m):
-        matrix[j][i]=mat[i][j]
-matrix.reverse()
