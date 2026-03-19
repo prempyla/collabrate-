@@ -1,4 +1,3 @@
-
 interface Observer {
   name: string;
   update(temp: number): void;
@@ -49,22 +48,18 @@ class TemperatureSensor implements Subject {
   private temperature: number = 0;
 
   attach(observer: Observer): void {
-    // implementation
     this.observers.push(observer)
   }
 
   detach(observer: Observer): void {
-    // implementation
     this.observers = this.observers.filter(ele => ele.name !== observer.name)
   }
 
   notify(): void {
-    // implementation
     this.observers.forEach(app => app.update(this.temperature))
   }
 
   setTemperature(temp: number): void {
-    // implementation
     this.temperature = temp;
     this.notify();
   }
