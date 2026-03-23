@@ -7,7 +7,6 @@ interface PaymentStrategy {
 
 // TODO: Implement CreditCardStrategy
 class CreditCardStrategy implements PaymentStrategy {
-    // Your code here
     public readonly name = "CreditCard"
     details: any
 
@@ -37,7 +36,6 @@ class CreditCardStrategy implements PaymentStrategy {
 
 // TODO: Implement PayPalStrategy
 class PayPalStrategy implements PaymentStrategy {
-    // Your code here
     public readonly name = "PayPal"
     validate(details: {email: string, password: string}): boolean {
         if(!details.email.includes("@") || !details.email.includes(".") || details.password.length < 8 ) {
@@ -62,7 +60,6 @@ class PayPalStrategy implements PaymentStrategy {
 
 // TODO: Implement BankTransferStrategy
 class BankTransferStrategy implements PaymentStrategy {
-    // Your code here
     public readonly name = "BankTransfer"
 
     validate(details: {accountNumber: string, routingNumber: string, accountHolder: string}): boolean {
@@ -91,12 +88,10 @@ class PaymentService {
     private strategies: { [key: string]: PaymentStrategy } = {};
     
     registerStrategy(strategy: PaymentStrategy): void {
-        // Your code here
         this.strategies[strategy.getStrategyName()] = strategy
     }
     
     processPayment(strategyName: string, amount: number, details: any): string {
-        // Your code here
         if (amount <= 0) {
             throw new Error("Error: Amount must be greater than zero")
         }
@@ -108,7 +103,6 @@ class PaymentService {
     }
     
     listStrategies(): string {
-        // Your code here
         return Object.keys(this.strategies).join(",")
     }
 }
