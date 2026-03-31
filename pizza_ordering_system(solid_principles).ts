@@ -38,6 +38,7 @@ class PaymentService {
         return order
     }
 }
+
 class KitchenService {
     prepare(order: Order): Order{
         order.status =  "PREPARED"
