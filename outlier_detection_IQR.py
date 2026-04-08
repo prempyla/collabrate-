@@ -1,5 +1,4 @@
 def count_salary_outliers(df):
-    # Write your code below
     Q1 = df['Salary'].quantile(0.25)
     Q3 = df['Salary'].quantile(0.75)
 
