@@ -1,4 +1,3 @@
-
 def sorted_list(list_of_integers):
     n = len(list_of_integers)
     for i in range(n):
