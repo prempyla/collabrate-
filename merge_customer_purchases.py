@@ -11,3 +11,4 @@ def merge_group_sort(transactions_df, customers_df):
 
     top4 = grouped.head(4)
     return [[row["Segment"], int(row["Total_Amount"])] for _, row in top4.iterrows()]
+
